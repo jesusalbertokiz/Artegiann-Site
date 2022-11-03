@@ -3,86 +3,105 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+import { Typography } from '@mui/material';
+import { Link } from 'gatsby'
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  backgroundColor: '#0000',
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.secondary,
+  borderRadius:'5px'
 }));
 
 export default function Footer() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+    <Box sx={{ flexGrow: 1 }} id='footer'>
+      <Grid container spacing={2} style={{justifyContent:'center'}}>
+        
+        
+        
+        {/* DESCRIPCION DEL NEGOCIO */}
         <Grid xs={12} md={5} lg={4}>
-          <Item>Email subscribe section</Item>
+          <Item>
+            <Typography variant='h6'>
+              Artegiann
+            </Typography>
+            <Typography variant='p' color='grey' style={{fontSize:'0.8rem'}}>
+              Giannela es una chica venezolana apasionada al arte y a la pintura.
+              desde pequeña mostro gran pasión e imaginación. Hoy en dia se dedica a imortalizar
+              sus creaciones gracias a los NFTs, elaborando diseños exclusivos de personajes con un 
+              transfondo único
+            </Typography>
+          </Item>
         </Grid>
-        <Grid container xs={12} md={7} lg={8} spacing={4}>
-          <Grid xs={6} lg={3}>
+        
+        {/* CATEGORIAS DEL FOOTER */}
+        <Grid container xs={11} md={6} lg={7} spacing={4} >
+          <Grid xs={6} lg={4}>
             <Item>
-              <Box
-                id="category-a"
-                sx={{ fontSize: '12px', textTransform: 'uppercase' }}
-              >
-                Category A
+              <Box id="category-a">
+                <Typography variant='h6' align='center'>
+                  Recursos
+                </Typography>
               </Box>
-              <Box component="ul" aria-labelledby="category-a" sx={{ pl: 2 }}>
-                <li>Link 1.1</li>
-                <li>Link 1.2</li>
-                <li>Link 1.3</li>
+              <Box component="div" aria-labelledby="category-a" >
+                <Typography>
+                  <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/blog'>
+                    Blog
+                  </Link>
+                </Typography>
+                <Typography>
+                  <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/discover'>
+                    Descubrir
+                  </Link>
+                </Typography>
               </Box>
             </Item>
           </Grid>
-          <Grid xs={6} lg={3}>
+          <Grid xs={6} lg={4}>
             <Item>
-              <Box
-                id="category-b"
-                sx={{ fontSize: '12px', textTransform: 'uppercase' }}
-              >
-                Category B
+              <Box id="category-b">
+                <Typography variant='h6' align='center'>
+                  Artista
+                </Typography>
               </Box>
-              <Box component="ul" aria-labelledby="category-b" sx={{ pl: 2 }}>
-                <li>Link 2.1</li>
-                <li>Link 2.2</li>
-                <li>Link 2.3</li>
+              <Box component="div" aria-labelledby="category-b" >
+                <Typography>
+                  <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/about'>
+                    Sobre Mi
+                  </Link>
+                </Typography>
+                <Typography>
+                  <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/contact'>
+                    Contácto
+                  </Link>
+                </Typography>
               </Box>
             </Item>
           </Grid>
-          <Grid xs={6} lg={3}>
+          
+          <Grid xs={6} lg={4}>
             <Item>
-              <Box
-                id="category-c"
-                sx={{ fontSize: '12px', textTransform: 'uppercase' }}
-              >
-                Category C
+              <Box id="category-d">
+                <Typography variant='h6' align='center'>
+                  Redes Sociales
+                </Typography>
               </Box>
-              <Box component="ul" aria-labelledby="category-c" sx={{ pl: 2 }}>
-                <li>Link 3.1</li>
-                <li>Link 3.2</li>
-                <li>Link 3.3</li>
-              </Box>
-            </Item>
-          </Grid>
-          <Grid xs={6} lg={3}>
-            <Item>
-              <Box
-                id="category-d"
-                sx={{ fontSize: '12px', textTransform: 'uppercase' }}
-              >
-                Category D
-              </Box>
-              <Box component="ul" aria-labelledby="category-d" sx={{ pl: 2 }}>
-                <li>Link 4.1</li>
-                <li>Link 4.2</li>
-                <li>Link 4.3</li>
+              <Box component="div" aria-labelledby="category-d" >
+                <Typography variant='p' color='grey' style={{fontSize:'0.8rem'}}>
+                  Puedes ver y compartir los nuevos lanzamientos de Giannela a traves de sus redes sociales
+                </Typography>
               </Box>
             </Item>
           </Grid>
         </Grid>
+
+
+        {/* FIN DEL FOOTER */}
         <Grid
-          xs={12}
+          xs={11}
           container
           justifyContent="space-between"
           alignItems="center"
@@ -104,6 +123,7 @@ export default function Footer() {
             </Grid>
           </Grid>
         </Grid>
+        
       </Grid>
     </Box>
   );
