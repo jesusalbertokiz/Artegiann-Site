@@ -3,7 +3,10 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
-import { Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from 'gatsby'
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -17,13 +20,13 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Footer() {
   return (
-    <Box sx={{ flexGrow: 1 }} id='footer'>
-      <Grid container spacing={2} style={{justifyContent:'center'}}>
+    <Box sx={{ flexGrow: 1}} id='footer'>
+      <Grid container spacing={1} lg={{}} style={{justifyContent:'center', borderRadius:'16px'}} className='bodyFooter'>
         
         
         
         {/* DESCRIPCION DEL NEGOCIO */}
-        <Grid xs={12} md={5} lg={4}>
+        <Grid xs={12} sm={8} md={4} lg={4}>
           <Item>
             <Typography variant='h6'>
               Artegiann
@@ -38,8 +41,8 @@ export default function Footer() {
         </Grid>
         
         {/* CATEGORIAS DEL FOOTER */}
-        <Grid container xs={11} md={6} lg={7} spacing={4} >
-          <Grid xs={6} lg={4}>
+        <Grid container xs={11} md={4} lg={4} spacing={4} >
+          <Grid xs={6} lg={6}>
             <Item>
               <Box id="category-a">
                 <Typography variant='h6' align='center'>
@@ -60,7 +63,7 @@ export default function Footer() {
               </Box>
             </Item>
           </Grid>
-          <Grid xs={6} lg={4}>
+          <Grid xs={6} lg={6}>
             <Item>
               <Box id="category-b">
                 <Typography variant='h6' align='center'>
@@ -82,7 +85,7 @@ export default function Footer() {
             </Item>
           </Grid>
           
-          <Grid xs={6} lg={4}>
+          {/* <Grid xs={6} lg={4}>
             <Item>
               <Box id="category-d">
                 <Typography variant='h6' align='center'>
@@ -95,13 +98,17 @@ export default function Footer() {
                 </Typography>
               </Box>
             </Item>
-          </Grid>
+          </Grid> */}
         </Grid>
 
 
         {/* FIN DEL FOOTER */}
         <Grid
           xs={11}
+          sm={11}
+          md={8}
+          lg={6}
+
           container
           justifyContent="space-between"
           alignItems="center"
@@ -109,17 +116,29 @@ export default function Footer() {
           sx={{ fontSize: '12px' }}
         >
           <Grid sx={{ order: { xs: 2, sm: 1 } }}>
-            <Item>© Copyright</Item>
+            <Item>©Artegiann 2022. All rights reserved</Item>
           </Grid>
-          <Grid container columnSpacing={1} sx={{ order: { xs: 1, sm: 2 } }}>
+          <Grid container columnSpacing={1} style={{justifyContent:'center'}} sx={{ order: { xs: 1, sm: 2 } }}>
             <Grid>
-              <Item>Link A</Item>
+              <Item>
+                <Button>
+                  <FacebookIcon/>
+                </Button>
+              </Item>
             </Grid>
             <Grid>
-              <Item>Link B</Item>
+              <Item>
+                <Button>
+                  <TwitterIcon/>
+                </Button>
+              </Item>
             </Grid>
             <Grid>
-              <Item>Link C</Item>
+              <Item>
+                <Button>
+                  <InstagramIcon/>
+                </Button>
+              </Item>
             </Grid>
           </Grid>
         </Grid>

@@ -4,11 +4,14 @@ import Footer from './footer';
 import './layout.css'
 
 
-const Layout = ()=>{
+const Layout = ({children})=>{
     return(
         <React.Fragment>
-            <Header/>
-            <Footer/>
+            <div id='layout'>
+                <Header/>
+                    {children}
+                <Footer/>
+            </div>
         </React.Fragment>
     )
 }
