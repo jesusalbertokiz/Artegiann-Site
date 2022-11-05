@@ -3,6 +3,7 @@ import theme from "../theme"
 import { ThemeProvider } from "@mui/material"
 import Layout from "../components/layout";
 import Hero from "../components/hero";
+import DiscoverSection from "../components/discoverSection";
 
 
 const IndexPage = () => {
@@ -10,6 +11,7 @@ const IndexPage = () => {
     <ThemeProvider theme={theme}>
       <Layout>
         <Hero/>
+        <DiscoverSection/>
       </Layout>
     </ThemeProvider>
   )

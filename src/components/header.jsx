@@ -28,7 +28,7 @@ const Header = ()=> {
 
     return (
         <React.Fragment>
-          <AppBar position='static' style={{borderRadius:'16px'}} id='header'>
+          <AppBar position='fixed' style={{borderRadius:'16px'}} id='header'>
             <Toolbar>
                 <Box sx={{
                     display:'flex',

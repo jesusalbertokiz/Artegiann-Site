@@ -5,6 +5,7 @@ import {
   List, 
   ListItemButton, 
   ListItemText,
+  Typography,
 } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
@@ -17,17 +18,33 @@ const DrawerComp = (props)=>{
   return(
     <React.Fragment>
     <Drawer
+      anchor='top'
       open={openDrawer}
       onClose={()=>setOpenDrawer(false)}
-      style={{padding:'1rem'}}
+      style={{textAlign:'center'}}
+      
     >
       <List>
+        <Typography
+          variant='h5'
+          color='primary'
+        >
+          Artegiann
+        </Typography>
         {
           props.pages.map(items => (
             <ListItemButton key={items.displayText}>
-              <ListItemText>
-                <Link style={{color:'black', textDecoration:'none'}} to={items.link}>
-                  {items.displayText}
+              <ListItemText 
+                style={{
+                  display:'flex',
+                  flexDirection:'column',
+                  alignItems:'center'
+                }}
+              >
+                <Link 
+                  style={{color:'white', textDecoration:'none'}} 
+                  to={items.link}>
+                    {items.displayText}
                 </Link>
               </ListItemText>
             </ListItemButton>
