@@ -60,7 +60,7 @@ const Hero = () => {
           alignItems="flex-start"
           style={{ padding: 10 }}
         >
-            <StaticImage src="../images/university.png" alt="Unifree"/>
+            <StaticImage src="../images/staticImage/university.png" alt="Unifree"/>
         </Grid>
     </Grid>
   )

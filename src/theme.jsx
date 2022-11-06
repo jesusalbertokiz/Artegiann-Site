@@ -15,9 +15,7 @@ const theme = createTheme({
         text:{
             primary:"#eeeeee",
             secondary:"#ffffff"
-        },
-        mode: 'dark'
-
+        }
     }
 })
 

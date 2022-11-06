@@ -1,17 +1,39 @@
 import * as React from 'react';
 import CardNft from './cardNft';
-import { Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 
 
-const DiscoverSection = ()=>{
-    const nfts = [
-        { nombre: "Alnika Scott", url: "../images/Alnika-Scott.jpg", link:"" },
-        { nombre: "Dominic Rollins", url: "../images/Dominic-Rollins.jpg", link:"" },
-        { nombre: "Grecia Singala", url: "../images/Grecia-Singala.jpg", link:"" },
-        { nombre: "Hari Kiufa", url: "../images/Hari-Kiufa.jpg", link:"" },
-        { nombre: "Miguel Angel Ortiz", url: "../images/Miguel-Angel-Ortiz.jpg", link:"" },
-        { nombre: "Tay D'Bron", url: "../images/Tay-DBron.jpg", link:"" },
-      ]
+
+function DiscoverSection(){
+
+    const data = useStaticQuery(graphql`
+    query{
+        allMdx(filter: {frontmatter: {type: {eq: "nft"}}}) {
+          nodes {
+            frontmatter {
+              banner {
+                alt
+                src {
+                  childImageSharp {
+                    gatsbyImageData(formats: PNG, width: 200)
+                  }
+                }
+              }
+              title
+              slug
+            }
+          }
+        }
+      }
+      
+      
+
+    `)
+    
+    //Array
+    const dataNFT = data.allMdx.nodes
+      console.log(dataNFT);
     return(
         <React.Fragment>
             <Grid 
@@ -48,21 +70,31 @@ const DiscoverSection = ()=>{
                     style={{width:'80%', margin:'0 auto'}}
                 >
 
-                    <CardNft/>
-                    <CardNft/>
-                    <CardNft/>
-                    <CardNft/>
-                    <CardNft/>
-                    <CardNft/>
-                    <CardNft/>
-                    <CardNft/>
-
-
+                {
+                    dataNFT.map((item)=>(
+                        <CardNft
+                            key={item.frontmatter.banner.alt}
+                            alt={item.frontmatter.banner.alt}
+                            name={item.frontmatter.title}
+                            image={item.frontmatter.banner.src.childImageSharp.gatsbyImageData}
+                            slug={item.frontmatter.slug}
+                        />
+                    ))
+                } 
 
                 </Grid>
+                <Button variant='contained' size='large' sx={{margin:'20px', padding:'10px'}}>
+                    <Link>
+                        ir a Descubre
+                    </Link>
+                </Button>
             </Grid>
         </React.Fragment>
     )
 }
 
 export default DiscoverSection;
+
+
+
+
