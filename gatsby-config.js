@@ -1,11 +1,8 @@
-const siteMetadata = {
+module.exports = {
   siteMetadata: {
     title: `materialUI-jmxs`,
     siteUrl: `materialui-jmxs.vercel.app`
-}}
-
-module.exports = {
-  siteMetadata,
+  },
   plugins: [
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap", 
