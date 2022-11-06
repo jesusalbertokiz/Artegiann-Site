@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `materialUI-jmxs`,
-    siteUrl: `https//:materialui-jmxs.vercel.app`
+    siteUrl: `https://materialui-jmxs.vercel.app`
   },
   plugins: [
     "gatsby-plugin-image", 
