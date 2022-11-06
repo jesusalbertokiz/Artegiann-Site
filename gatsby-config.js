@@ -1,7 +1,7 @@
 const siteMetadata = {
   siteMetadata: {
     title: `materialUI-jmxs`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `materialui-jmxs.vercel.app`
 }}
 
 module.exports = {
