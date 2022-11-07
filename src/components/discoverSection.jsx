@@ -33,7 +33,7 @@ function DiscoverSection(){
     
     //Array
     const dataNFT = data.allMdx.nodes
-    
+
     return(
         <React.Fragment>
             <Grid 
@@ -73,7 +73,7 @@ function DiscoverSection(){
                 >
 
                 {
-                    dataNFT.map((item)=>(
+                    dataNFT.slice(6,14).map((item)=>(
                         <CardNft
                             key={item.frontmatter.banner.alt}
                             alt={item.frontmatter.banner.alt}

@@ -24,7 +24,7 @@ const DrawerComp = (props)=>{
       style={{textAlign:'center'}}
       
     >
-      <List>
+      <List style={{backgroundColor:'#23212d'}}>
         <Typography
           variant='h5'
           color='primary'
