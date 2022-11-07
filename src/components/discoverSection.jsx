@@ -1,6 +1,6 @@
 import * as React from 'react';
 import CardNft from './cardNft';
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography} from '@mui/material';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
 
@@ -64,7 +64,7 @@ function DiscoverSection(){
                         fontSize:'1.20rem'
                     }}
                 >
-                Aca podras todos los personajes de Unifree. Este es mi ultimo proyecto al cual le he dedicado mucho tiempo y amor. La historia de cada uno de los personajes es unica y bizarra. Muchos de ellos han vivido cosas inimaginables y es por eso que cada uno es muy especial.
+                Aca podras ver todos los personajes de Unifree. Este es mi ultimo proyecto al cual le he dedicado mucho tiempo y amor. La historia de cada uno de los personajes es unica y bizarra. Muchos de ellos han vivido cosas inimaginables y es por eso que cada uno es muy especial.
                 </Typography>
                 <Grid
                     container
@@ -72,24 +72,26 @@ function DiscoverSection(){
                     style={{width:'80%', margin:'0 auto'}}
                 >
 
+
                 {
-                    dataNFT.slice(6,14).map((item)=>(
-                        <CardNft
-                            key={item.frontmatter.banner.alt}
-                            alt={item.frontmatter.banner.alt}
-                            name={item.frontmatter.title}
-                            image={item.frontmatter.banner.src.childImageSharp.gatsbyImageData}
-                            slug={item.frontmatter.slug}
-                        />
-                    ))
-                } 
+
+                    dataNFT.slice(6,10).map((item)=>(
+                      <CardNft
+                          key={item.frontmatter.banner.alt}
+                          alt={item.frontmatter.banner.alt}
+                          name={item.frontmatter.title}
+                          image={item.frontmatter.banner.src.childImageSharp.gatsbyImageData}
+                          slug={item.frontmatter.slug}
+                      />
+                  ))
+                }
 
                 </Grid>
-                <Button variant='contained' size='large' sx={{margin:'20px', padding:'10px'}}>
-                    <Link>
+                <Link to='/discover' style={{color:'inherit', textDecoration:'none'}}>
+                    <Button variant='contained' size='large' sx={{margin:'20px', padding:'10px'}}>
                         ir a Descubre
-                    </Link>
-                </Button>
+                    </Button>
+                </Link>
             </Grid>
         </React.Fragment>
     )
