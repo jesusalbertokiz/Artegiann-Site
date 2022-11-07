@@ -44,15 +44,16 @@ const CardNft =  (props)=> {
                     
             </Typography>  
 
-            <Button variant='outlined' color='secondary'  size="medium">
-                <Typography>
-                    <Link
+            <Typography>
+                <Link
                       style={{color:'inherit', textDecoration:'none'}}
                       to={`/${props.slug}`}>
+                    <Button variant='contained' color='primary'  size="medium">
                         Ver Historia
-                    </Link>
-                </Typography>
-            </Button>
+                    </Button>
+                </Link>
+            </Typography>
+            
         </Card>
     </>
   );

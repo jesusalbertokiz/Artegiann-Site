@@ -33,7 +33,7 @@ function DiscoverSection(){
     
     //Array
     const dataNFT = data.allMdx.nodes
-      console.log(dataNFT);
+    
     return(
         <React.Fragment>
             <Grid 
@@ -57,9 +57,11 @@ function DiscoverSection(){
                 <Typography 
                     variant='body1' 
                     color='white'
+                    
                     style={{
                         margin:'40px',
-                        textAlign:'center'
+                        textAlign:'center',
+                        fontSize:'1.20rem'
                     }}
                 >
                 Aca podras todos los personajes de Unifree. Este es mi ultimo proyecto al cual le he dedicado mucho tiempo y amor. La historia de cada uno de los personajes es unica y bizarra. Muchos de ellos han vivido cosas inimaginables y es por eso que cada uno es muy especial.

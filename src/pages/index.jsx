@@ -4,6 +4,8 @@ import { ThemeProvider } from "@mui/material"
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import DiscoverSection from "../components/discoverSection";
+import UnifreeHistory from "../components/unifreeHistory";
+import AboutSection from "../components/aboutSection";
 
 
 const IndexPage = () => {
@@ -12,6 +14,8 @@ const IndexPage = () => {
       <Layout>
         <Hero/>
         <DiscoverSection/>
+        <UnifreeHistory/>
+        <AboutSection/>
       </Layout>
     </ThemeProvider>
   )
