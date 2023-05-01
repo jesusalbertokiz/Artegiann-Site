@@ -21,10 +21,10 @@ const BlogTemplate = ({data})=>{
                     md={4}
                     sm={12}
                     xs={12}
-                    style={{display:"grid", justifyItems:'center'}}
+                    style={{margin:'0 auto'}}
                   >
                     <Typography 
-                      variant='h1' 
+                      variant='h2' 
                       color='primary'
                       sx={{
                         fontSize: {
