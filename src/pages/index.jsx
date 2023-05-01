@@ -12,7 +12,10 @@ const IndexPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <Hero/>
+        <Hero
+          title="Unifree, la universidad más perturbadora del mundo          "
+          subtitle="Esta universidad guarda un secreto oscuro tras sus estudiantes, cada uno con una historia diferente, más extraña y bizarra que otra."
+        />
         <DiscoverSection/>
         <UnifreeHistory/>
         <AboutSection/>
