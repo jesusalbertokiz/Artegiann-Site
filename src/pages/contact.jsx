@@ -8,7 +8,7 @@ import UnifreeHistory from "../components/unifreeHistory";
 import AboutSection from "../components/aboutSection";
 
 
-const IndexPage = () => {
+const ContactPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -18,6 +18,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default ContactPage
 
 export const Head = () => <title>Contacto</title>

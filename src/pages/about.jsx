@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
   
-  const About = () => {
+  const AboutPage = () => {
     const classes = useStyles();
   
     return (
@@ -66,3 +66,7 @@ const useStyles = makeStyles((theme) => ({
       </ThemeProvider>
     )
   };
+
+  export default AboutPage
+
+export const Head = () => <title>Sobre Mi</title>
