@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <div sx={{ marginTop: 4, marginBottom: 4 }}>
+        <div sx={{ padding: '1rem'}}>
           <Grid container spacing={4}>
             <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
               <Typography variant="h1" color="secondary" gutterBottom>
