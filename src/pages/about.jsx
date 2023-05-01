@@ -7,30 +7,13 @@ import {
   Typography
 } from '@mui/material';
 
-const useStyles = makeStyles((theme) => ({
-    container: {
-      marginTop: theme.spacing(4),
-      marginBottom: theme.spacing(4),
-    },
-    item: {
-      [theme.breakpoints.up("sm")]: {
-        width: "50%",
-      },
-      [theme.breakpoints.up("md")]: {
-        width: "33.33%",
-      },
-    },
-  }));
-  
-  const AboutPage = () => {
-    const classes = useStyles();
-  
-    return (
-      <ThemeProvider theme={theme}>
-        <Layout>
-          <div className={classes.container}>
+const AboutPage = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <div sx={{ marginTop: 4, marginBottom: 4 }}>
           <Grid container spacing={4}>
-            <Grid item xs={12} className={classes.item}>
+            <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
               <Typography variant="h4" gutterBottom>
                 ¡Hola! Mi nombre es Giannella A. Casilli T.
               </Typography>
@@ -40,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
                 soluciones innovadoras y escalables para problemas reales.
               </Typography>
             </Grid>
-            <Grid item xs={12} className={classes.item}>
+            <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
               <Typography variant="h4" gutterBottom>
                 ¿Qué puedo hacer por ti?
               </Typography>
@@ -50,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
                 colaborar en proyectos de código abierto.
               </Typography>
             </Grid>
-            <Grid item xs={12} className={classes.item}>
+            <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
               <Typography variant="h4" gutterBottom>
                 ¿Quieres saber más?
               </Typography>
@@ -61,11 +44,11 @@ const useStyles = makeStyles((theme) => ({
             </Grid>
           </Grid>
         </div>
-        </Layout>
-      </ThemeProvider>
-    )
-  };
+      </Layout>
+    </ThemeProvider>
+  )
+};
 
-  export default AboutPage
+export default AboutPage;
 
 export const Head = () => <title>Sobre Mi</title>
