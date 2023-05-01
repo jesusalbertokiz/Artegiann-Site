@@ -1,6 +1,8 @@
 import React from 'react';
-import Typography from '@mui/material';
-import Grid from '@mui/material/Unstable_Grid2';
+import {
+  Grid,
+  Typography
+} from '@mui/material';
 
 const Hero = ({ title, subtitle }) => {
   return (
