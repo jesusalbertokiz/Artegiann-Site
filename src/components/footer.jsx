@@ -51,11 +51,6 @@ export default function Footer() {
               </Box>
               <Box component="div" aria-labelledby="category-a" >
                 <Typography>
-                  <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/blog'>
-                    Blog
-                  </Link>
-                </Typography>
-                <Typography>
                   <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/discover'>
                     Descubrir
                   </Link>

@@ -16,7 +16,7 @@ const Header = ()=> {
     const navLinks = [
         { displayText: "Home", link: "/" },
         { displayText: "Descubre", link: "/discover" },
-        { displayText: "Blog", link: "/blog" },
+        /*{ displayText: "Blog", link: "/blog" },*/
         { displayText: "Sobre Mi", link: "/about" },
         { displayText: "Contacto", link: "/contact" },
       ]
