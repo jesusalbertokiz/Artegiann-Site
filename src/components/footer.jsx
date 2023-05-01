@@ -48,7 +48,13 @@ export default function Footer() {
                   Recursos
                 </Typography>
               </Box>
-              
+              <Box component="div" aria-labelledby="category-b" >
+                <Typography>
+                  <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/discover'>
+                    Descubre
+                  </Link>
+                </Typography>
+              </Box>
             </Item>
           </Grid>
           <Grid xs={6} lg={6}>
