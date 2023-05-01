@@ -1,5 +1,6 @@
 import React from 'react';
-import { Grid, Typography } from '@material-ui/core';
+import Typography from '@material-ui';
+import Grid from '@mui/material/Unstable_Grid2';
 
 const Hero = ({ title, subtitle }) => {
   return (
