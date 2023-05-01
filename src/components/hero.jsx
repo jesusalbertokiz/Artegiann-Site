@@ -64,11 +64,7 @@ const Hero = () => {
           Esta universidad guarda un secreto oscuro tras sus estudiantes, cada uno con una historia diferente, más extraña y bizarra que otra.
         </Typography>
         <Typography style={{ margin:'.5rem auto 3rem auto' }}>
-          <Link style={{color:'inherit', textDecoration:'none'}} to='/unifree'>
-            <Button variant="contained" color="primary" size="large" >
-              Ver más...            
-            </Button>
-          </Link>
+          
         </Typography>
       </Grid>
 
