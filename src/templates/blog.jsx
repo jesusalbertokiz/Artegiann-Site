@@ -21,7 +21,7 @@ const BlogTemplate = ({data})=>{
                     md={4}
                     sm={12}
                     xs={12}
-                    
+                    style={{display:"grid", justifyItems:'center'}}
                   >
                     <Typography 
                       variant='h1' 
