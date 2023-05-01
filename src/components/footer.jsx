@@ -124,13 +124,6 @@ export default function Footer() {
             <Grid>
               <Item>
                 <Button>
-                  <TwitterIcon/>
-                </Button>
-              </Item>
-            </Grid>
-            <Grid>
-              <Item>
-                <Button>
                   <InstagramIcon/>
                 </Button>
               </Item>
