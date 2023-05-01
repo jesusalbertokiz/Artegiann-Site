@@ -6,6 +6,7 @@ import {
   Grid,
   Typography
 } from '@mui/material';
+import Hero from "../components/hero";
 
 const AboutPage = () => {
   return (
@@ -14,19 +15,14 @@ const AboutPage = () => {
         <div sx={{ padding: '1rem'}}>
           <Grid container spacing={4}>
             <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
-              <Typography variant="h1" color="secondary" gutterBottom>
-                ¡Hola! Mi nombre es Giannella A. Casilli T.
-              </Typography>
-              <Typography variant="body1" color="white" paragraph>
-                Desde que era pequeña, siempre he tenido una gran pasión por el mundo de
+              <Hero
+                title="¡Hola! Mi nombre es Giannella A. Casilli T."
+                subtitle="Desde que era pequeña, siempre he tenido una gran pasión por el mundo de
                 las artes, desarrollando habilidades en la pintura, el dibujo, la
-                escultura en plastilina, el diseño y la escritura de cuentos.
-              </Typography>
-              <Typography variant="body1" color="white" paragraph>
-                Además, soy una emprendedora y creadora de mi propia marca de diseños
+                escultura en plastilina, el diseño y la escritura de cuentos. Además, soy una emprendedora y creadora de mi propia marca de diseños
                 exclusivos llamada ArteGiann, y también me dedico a la creación digital
-                de NFTs, que en un mes aproximadamente estarán en el mercado.
-              </Typography>
+                de NFTs, que en un mes aproximadamente estarán en el mercado."               
+              />
             </Grid>
             <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
               <Typography variant="h2" color="secondary" gutterBottom>
