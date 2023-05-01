@@ -28,7 +28,12 @@ const AboutPage = () => {
             </Grid>
             <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
               <ImageWithText
-                image={<StaticImage src="../images/staticImage/giannela-about.jpeg" alt="giannela-about" />}
+                image={
+                  <StaticImage 
+                    src="../images/staticImage/giannela-about.jpeg" 
+                    alt="giannela-about" 
+                    width={350}
+                  />}
                 title="Mis pasiones"
                 subtitle="Soy una apasionada del Anime (series japonesas), la naturaleza, defensora
                 del medio ambiente y los animales. Me siento muy identificada con las
