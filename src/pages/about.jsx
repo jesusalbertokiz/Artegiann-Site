@@ -7,6 +7,8 @@ import {
   Typography
 } from '@mui/material';
 import Hero from "../components/hero";
+import ImageWithText from "../components/ImageWithText";
+import { StaticImage } from "gatsby-plugin-image";
 
 const AboutPage = () => {
   return (
@@ -25,21 +27,17 @@ const AboutPage = () => {
               />
             </Grid>
             <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
-              <Typography variant="h2" color="secondary" gutterBottom>
-                Mis pasiones
-              </Typography>
-              <Typography variant="body1" color="white" paragraph>
-                Soy una apasionada del Anime (series japonesas), la naturaleza, defensora
+              <ImageWithText
+                image={<StaticImage src="../images/staticImage/giannela-about.jpeg" alt="giannela-about" />}
+                title="Mis pasiones"
+                subtitle="Soy una apasionada del Anime (series japonesas), la naturaleza, defensora
                 del medio ambiente y los animales. Me siento muy identificada con las
-                energías, la espiritualidad y el universo.
-              </Typography>
-              <Typography variant="body1" color="white" paragraph>
-                A pesar de mi corta edad y de estar dentro del Espectro Autista, siempre estoy rompiendo paradigmas y
+                energías, la espiritualidad y el universo. A pesar de mi corta edad y de estar dentro del Espectro Autista, siempre estoy rompiendo paradigmas y
                 desarrollándome en cada una de las metas que me propongo. Siempre quiero
                 dar un paso más allá y sé que mi destino está en mis propias manos. Soy
                 una firme creyente de que si se tiene pasión por lo que se ama, se pueden
-                alcanzar todos los sueños.
-              </Typography>
+                alcanzar todos los sueños."
+              />
             </Grid>
             <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
               <Typography variant="h2" color="secondary" gutterBottom>
