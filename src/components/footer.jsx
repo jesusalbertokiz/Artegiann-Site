@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import { Button, Typography } from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import TiktokIcon from './tiktokIcon'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from 'gatsby'
 
@@ -117,7 +116,7 @@ export default function Footer() {
             <Grid>
               <Item>
                 <Button>
-                  <FacebookIcon/>
+                  <TiktokIcon/>
                 </Button>
               </Item>
             </Grid>
