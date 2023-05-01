@@ -43,16 +43,19 @@ export default function Footer() {
         <Grid container xs={11} md={4} lg={4} spacing={4} >
           <Grid xs={6} lg={6}>
             <Item>
+              <Box id="category-a">
+                <Typography variant='h6' align='center'>
+                  Recursos
+                </Typography>
+              </Box>
+              
+            </Item>
+          </Grid>
+          <Grid xs={6} lg={6}>
+            <Item>
               <Box id="category-b">
                 <Typography variant='h6' align='center'>
                   Artista
-                </Typography>
-              </Box>
-              <Box component="div" aria-labelledby="category-a" >
-                <Typography>
-                  <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/discover'>
-                    Descubrir
-                  </Link>
                 </Typography>
               </Box>
               <Box component="div" aria-labelledby="category-b" >
@@ -95,7 +98,7 @@ export default function Footer() {
           lg={6}
 
           container
-          justifyContent="space-between"
+          justifyContent="space-around"
           alignItems="center"
           flexDirection={{ xs: 'column', sm: 'row' }}
           sx={{ fontSize: '12px' }}
