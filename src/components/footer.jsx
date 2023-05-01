@@ -43,9 +43,9 @@ export default function Footer() {
         <Grid container xs={11} md={4} lg={4} spacing={4} >
           <Grid xs={6} lg={6}>
             <Item>
-              <Box id="category-a">
+              <Box id="category-b">
                 <Typography variant='h6' align='center'>
-                  Recursos
+                  Artista
                 </Typography>
               </Box>
               <Box component="div" aria-labelledby="category-a" >
@@ -53,15 +53,6 @@ export default function Footer() {
                   <Link style={{textDecoration:'none',color:'grey', fontSize:'0.9rem'}} to='/discover'>
                     Descubrir
                   </Link>
-                </Typography>
-              </Box>
-            </Item>
-          </Grid>
-          <Grid xs={6} lg={6}>
-            <Item>
-              <Box id="category-b">
-                <Typography variant='h6' align='center'>
-                  Artista
                 </Typography>
               </Box>
               <Box component="div" aria-labelledby="category-b" >
@@ -110,7 +101,7 @@ export default function Footer() {
           sx={{ fontSize: '12px' }}
         >
           <Grid sx={{ order: { xs: 2, sm: 1 } }}>
-            <Item>©Artegiann 2022. All rights reserved</Item>
+            <Item>©Artegiann 2023. All rights reserved</Item>
           </Grid>
           <Grid container columnSpacing={1} style={{justifyContent:'center'}} sx={{ order: { xs: 1, sm: 2 } }}>
             <Grid>
