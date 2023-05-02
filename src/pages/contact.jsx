@@ -12,16 +12,20 @@ const ContactPage = () => {
     <ThemeProvider theme={theme}>
       <Layout>
         <Container>
-          <Grid container spacing={2} justifyContent="center" alignItems="center">
+          <Grid container spacing={2} justifyContent="center" alignItems="center" style={{margin:'auto'}}>
             <Grid item xs={12} textAlign="center">
-              <Typography variant="h3" component="h1" gutterBottom>Contacto</Typography>
+              <Typography variant="h1" color="secondary" gutterBottom>Contacto</Typography>
             </Grid>
             <Grid item xs={12} textAlign="center">
-              <Typography variant="body1" gutterBottom>¡Síguenos en nuestras redes sociales!</Typography>
+              <Typography variant="body1" gutterBottom>
+              ¡Hola! Si te gustaría contactar con Giannella, la creadora de ArteGiann, para conocer 
+              más sobre sus diseños exclusivos y creatividad, o para adquirir algún producto en su 
+              tienda en línea, aquí te dejamos sus medios de contacto
+              </Typography>
             </Grid>
             <Grid item xs={12} textAlign="center">
               <IconButton href="https://www.instagram.com/" target="_blank" rel="noopener">
-                <InstagramIcon />
+                <InstagramIcon color="#7b1fa2" />
               </IconButton>
               <IconButton href="https://www.tiktok.com/" target="_blank" rel="noopener">
                 <TiktokIcon />

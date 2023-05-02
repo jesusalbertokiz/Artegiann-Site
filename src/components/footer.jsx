@@ -78,21 +78,7 @@ export default function Footer() {
               </Box>
             </Item>
           </Grid>
-          
-          {/* <Grid xs={6} lg={4}>
-            <Item>
-              <Box id="category-d">
-                <Typography variant='h6' align='center'>
-                  Redes Sociales
-                </Typography>
-              </Box>
-              <Box component="div" aria-labelledby="category-d" >
-                <Typography variant='p' color='grey' style={{fontSize:'0.8rem'}}>
-                  Puedes ver y compartir los nuevos lanzamientos de Giannela a traves de sus redes sociales
-                </Typography>
-              </Box>
-            </Item>
-          </Grid> */}
+      
         </Grid>
 
 
