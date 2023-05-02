@@ -27,7 +27,7 @@ const Hero = ({ title, subtitle }) => {
         container
         direction="column"
         justify="center"
-        alignItems="flex-start"
+        alignItems="center"
         style={{ paddingLeft: 0, paddingTop: '2rem' }}
       >
         <Typography
@@ -69,7 +69,7 @@ const Hero = ({ title, subtitle }) => {
               xs: 'center',
             },
           }}
-          style={{ margin: 15 }}
+          style={{ margin: 15, textAlign:'center'}}
         >
           {subtitle}
         </Typography>
