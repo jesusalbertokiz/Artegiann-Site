@@ -7,7 +7,7 @@ import TiktokIcon from '../components/tiktokIcon'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { ShoppingCart } from "@mui/icons-material";
-import Link from "@mui/material";
+import { Link } from "gatsby";
 
 const ContactPage = () => {
   return (
