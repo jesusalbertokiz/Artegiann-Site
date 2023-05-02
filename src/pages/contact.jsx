@@ -7,7 +7,8 @@ import TiktokIcon from '../components/tiktokIcon'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { ShoppingCart } from "@mui/icons-material";
-import { Link } from "gatsby";
+import ImageWithTextRigth from "../components/ImageWithTextRight";
+import { StaticImage } from "gatsby-plugin-image";
 
 const ContactPage = () => {
   return (
@@ -15,14 +16,16 @@ const ContactPage = () => {
       <Layout>
         <Container>
           <Grid container spacing={2} justifyContent="center" alignItems="center" style={{margin:'auto', color:'white'}}>
-            <Grid item xs={12} textAlign="center">
-              <Typography variant="h1" color="secondary" gutterBottom>Contacto</Typography>
-            </Grid>
-            <Grid item xs={12} textAlign="center">
-              <Typography variant="body1" color="inherit" gutterBottom>
-                ¡Hola! Si te gustaría contactar con Giannella, la creadora de ArteGiann, para conocer más sobre sus diseños exclusivos y creatividad, o para adquirir algún producto en su tienda en línea, aquí te dejamos sus medios de contacto
-              </Typography>
-            </Grid>
+            <ImageWithTextRigth
+                image={
+                  <StaticImage 
+                    src="../images/staticImage/giannela-contacto.jpeg" 
+                    alt="giannela-contact" 
+                    width={350}
+                  />}
+                title="Contacto"
+                subtitle="¡Hola! Si te gustaría contactar con Giannella, la creadora de ArteGiann, para conocer más sobre sus diseños exclusivos y creatividad, o para adquirir algún producto en su tienda en línea, aquí te dejamos sus medios de contacto"
+              />
             <Grid item xs={12} textAlign="center">
               <Grid container spacing={2} justifyContent="center" alignItems="flex-start">
                 <Grid item xs={12} md={4}>
