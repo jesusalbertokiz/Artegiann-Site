@@ -16,7 +16,7 @@ const ImageWithTextRight = ({ image, title, subtitle, link }) => {
         container
         direction="column"
         justify="center"
-        alignItems="flex-start"
+        alignItems="center"
         style={{ paddingLeft: 0 }}
       >
         <Typography
