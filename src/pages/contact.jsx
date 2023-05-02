@@ -42,7 +42,6 @@ const ContactPage = () => {
                   <Typography variant="body1" color="inherit" gutterBottom>
                     WhatsApp: También puedes escribirle vía WhatsApp para hacerle preguntas o hacerle pedidos.
                   </Typography>
-                  <WhatsAppIcon />
                   <IconButton href="https://wa.link/2i5201" target="_blank" rel="noopener">
                     <WhatsAppIcon style={{color:'#7b1fa2'}}/>
                   </IconButton>
@@ -52,7 +51,7 @@ const ContactPage = () => {
                     Tiendas en línea: Si quieres adquirir algún producto de ArteGiann, puedes visitar sus tiendas en línea.
                   </Typography>
                   <IconButton href="https://artegiann.atienda.la/#/products" target="_blank" rel="noopener">
-                    <ShoppingCart />
+                    <ShoppingCart style={{color:'#7b1fa2'}}/>
                   </IconButton>
                 </Grid>
               </Grid>
