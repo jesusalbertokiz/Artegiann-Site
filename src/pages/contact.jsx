@@ -24,7 +24,7 @@ const ContactPage = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} textAlign="center">
-              <Grid container spacing={2} justifyContent="center" alignItems="flex-start" style={{margin:'auto'}}>
+              <Grid container spacing={2} justifyContent="center" alignItems="flex-start">
                 <Grid item xs={12} md={4}>
                   <Typography variant="body1" color="inherit" gutterBottom>
                     Redes sociales: Puedes seguir a Giannella en Instagram y TikTok, donde comparte sus obras de arte y su creatividad. Encuéntrala en @artegiannve.
@@ -43,14 +43,17 @@ const ContactPage = () => {
                     WhatsApp: También puedes escribirle vía WhatsApp para hacerle preguntas o hacerle pedidos.
                   </Typography>
                   <WhatsAppIcon />
+                  <IconButton href="https://wa.link/2i5201" target="_blank" rel="noopener">
+                    <WhatsAppIcon style={{color:'#7b1fa2'}}/>
+                  </IconButton>
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <Typography variant="body1" color="inherit" gutterBottom>
-                    Tiendas en línea: Si quieres adquirir algún producto de ArteGiann, puedes visitar sus tiendas en línea en artegiann.atienda.la.
+                    Tiendas en línea: Si quieres adquirir algún producto de ArteGiann, puedes visitar sus tiendas en línea.
                   </Typography>
-                  <Link href="https://artegiann.atienda.la/#/products" target="_blank" rel="noopener">
+                  <IconButton href="https://artegiann.atienda.la/#/products" target="_blank" rel="noopener">
                     <ShoppingCart />
-                  </Link>
+                  </IconButton>
                 </Grid>
               </Grid>
             </Grid>
