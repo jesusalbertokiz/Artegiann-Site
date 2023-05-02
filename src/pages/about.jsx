@@ -69,4 +69,12 @@ const AboutPage = () => {
 
 export default AboutPage;
 
-export const Head = () => <title>Sobre Mi</title>
+export function Head() {
+  return (
+    <>
+      <html lang="es"/>
+      <title>Acerca de Mi</title>
+      <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/jesusalbertokiz/Artegiann-Site/main/src/images/staticImage/logo.png"></link>
+    </>
+  )
+}

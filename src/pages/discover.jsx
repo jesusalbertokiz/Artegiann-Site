@@ -18,4 +18,12 @@ const DiscoverPage = () => {
 
 export default DiscoverPage
 
-export const Head = () => <title>Descubre</title>
+export function Head() {
+  return (
+    <>
+      <html lang="es"/>
+      <title>Descubre</title>
+      <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/jesusalbertokiz/Artegiann-Site/main/src/images/staticImage/logo.png"></link>
+    </>
+  )
+}

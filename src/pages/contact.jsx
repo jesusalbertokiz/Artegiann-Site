@@ -70,5 +70,12 @@ const ContactPage = () => {
 
 export default ContactPage
 
-export const Head = () => <title>Contacto</title>
-
+export function Head() {
+  return (
+    <>
+      <html lang="es"/>
+      <title>Contacto</title>
+      <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/jesusalbertokiz/Artegiann-Site/main/src/images/staticImage/logo.png"></link>
+    </>
+  )
+}
