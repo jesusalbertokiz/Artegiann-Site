@@ -3,7 +3,7 @@ import theme from "../theme"
 import { ThemeProvider } from "@mui/material"
 import Layout from "../components/layout";
 import { Button, Container, Grid, IconButton, Typography } from '@mui/material';
-import TiktokIcon from './tiktokIcon'
+import TiktokIcon from '../components/tiktokIcon'
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 
