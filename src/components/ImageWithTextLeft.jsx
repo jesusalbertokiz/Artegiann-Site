@@ -1,9 +1,8 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
-const ImageWithText = ({ image, title, subtitle, link }) => {
+const ImageWithTextLeft = ({ image, title, subtitle, link }) => {
   return (
     <Grid
       container
@@ -73,4 +72,4 @@ const ImageWithText = ({ image, title, subtitle, link }) => {
   );
 };
 
-export default ImageWithText;
+export default ImageWithTextLeft;

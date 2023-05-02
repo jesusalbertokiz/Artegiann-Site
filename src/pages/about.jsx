@@ -2,13 +2,11 @@ import * as React from "react"
 import theme from "../theme"
 import { ThemeProvider } from "@mui/material"
 import Layout from "../components/layout";
-import {
-  Grid,
-  Typography
-} from '@mui/material';
+import { Grid } from '@mui/material';
 import Hero from "../components/hero";
-import ImageWithText from "../components/ImageWithText";
+import ImageWithTextLeft from "../components/ImageWithTextLeft";
 import { StaticImage } from "gatsby-plugin-image";
+import ImageWithTextRigth from "../components/ImageWithTextRight";
 
 const AboutPage = () => {
   return (
@@ -27,7 +25,7 @@ const AboutPage = () => {
               />
             </Grid>
             <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
-              <ImageWithText
+              <ImageWithTextLeft
                 image={
                   <StaticImage 
                     src="../images/staticImage/giannela-about.jpeg" 
@@ -45,21 +43,21 @@ const AboutPage = () => {
               />
             </Grid>
             <Grid item xs={12} sx={{ width: "100%", sm: { width: "50%" }, md: { width: "33.33%" }}}>
-              <Typography variant="h2" color="secondary" gutterBottom>
-                Formación académica
-              </Typography>
-              <Typography variant="body1" color="white" paragraph>
-              En cuanto a mi formación académica, he dedicado mucho esfuerzo y
-              dedicación para alcanzar mis objetivos. He culminado el High School
-              &#40;bachillerato internacional&#41;  en el Dawere International High School, y
-              el bachillerato en Valencia, Venezuela, con la mención honorífica SUMMA
-              CUM LAUDE. Actualmente, estoy becada por la Escuela de Escritores de la
-              periodista y escritora Venezolana NACARID PORTAL, autora de mi primer
-              cuento “Una relevante conversación”. Además, estoy iniciando un Diplomado
-              de Gestión Ambiental en la UNESCO. También culminé el curso de inglés en
-              la Universidad de Carabobo, Laboratorio de Idiomas, en Valencia –
-              Venezuela
-              </Typography>
+            <ImageWithTextRigth
+                image={
+                  <StaticImage 
+                    src="../images/staticImage/formacion.png" 
+                    alt="formación" 
+                    width={350}
+                  />}
+                title="Formación académica"
+                subtitle="En cuanto a mi formación académica, he dedicado mucho esfuerzo y dedicación para alcanzar 
+                mis objetivos. He culminado el High School (bachillerato internacional) en el Dawere International High School, 
+                y el bachillerato en Valencia, Venezuela, con la mención honorífica SUMMA CUM LAUDE. Actualmente, estoy becada 
+                por la Escuela de Escritores de la periodista y escritora Venezolana NACARID PORTAL, autora de mi primer cuento 
+                “Una relevante conversación”. Además, estoy iniciando un Diplomado de Gestión Ambiental en la UNESCO. También 
+                culminé el curso de inglés en la Universidad de Carabobo, Laboratorio de Idiomas, en Valencia – Venezuela"
+              />
             </Grid>
           </Grid>
         </div>
