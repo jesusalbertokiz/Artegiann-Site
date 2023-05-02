@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `materialUI-jmxs`,
-    siteUrl: `https://materialui-jmxs.vercel.app`
+    title: `Artegiann`,
+    siteUrl: `https://artegiann.com`,
+    image: `./src/images/staticImage/logo.png`
   },
   plugins: [
     "gatsby-plugin-image", 
