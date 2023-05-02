@@ -16,8 +16,7 @@ const ImageWithText = ({ image, title, subtitle, link }) => {
         container
         direction="column"
         justify="center"
-        alignItems="flex-start"
-        style={{ padding: 10 }}
+        alignItems="center"
       >
         {image}
       </Grid>
