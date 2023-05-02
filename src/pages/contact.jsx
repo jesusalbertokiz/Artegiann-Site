@@ -5,9 +5,6 @@ import Layout from "../components/layout";
 import { Button, Container, Grid, IconButton, Typography } from '@mui/material';
 import TiktokIcon from '../components/tiktokIcon'
 import InstagramIcon from '@mui/icons-material/Instagram';
-
-
-import { Grid, IconButton, Typography, Button } from "@mui/material";
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const ContactPage = () => {
