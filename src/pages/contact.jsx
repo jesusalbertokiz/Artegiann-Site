@@ -2,7 +2,7 @@ import * as React from "react"
 import theme from "../theme"
 import { ThemeProvider } from "@mui/material"
 import Layout from "../components/layout";
-import { Button, Container, Grid, IconButton, Typography } from '@mui/material';
+import { Container, Grid, IconButton, Typography } from '@mui/material';
 import TiktokIcon from '../components/tiktokIcon'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
