@@ -31,6 +31,7 @@ const AboutPage = () => {
                     src="../images/staticImage/giannela-about.jpeg" 
                     alt="giannela-about" 
                     width={350}
+                    style={{borderRadius:'30px'}}
                   />}
                 title="Mis pasiones"
                 subtitle="Soy una apasionada del Anime (series japonesas), la naturaleza, defensora
