@@ -17,6 +17,7 @@ const ContactPage = () => {
         <Container>
           <Grid container spacing={2} justifyContent="center" alignItems="center" style={{margin:'auto', color:'white'}}>
             <ImageWithTextRigth
+                className="heroBack"
                 image={
                   <StaticImage 
                     src="../images/staticImage/giannela-contacto.jpeg" 
