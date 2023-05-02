@@ -26,7 +26,7 @@ const ContactPage = () => {
                 title="Contacto"
                 subtitle="¡Hola! Si te gustaría contactar con Giannella, la creadora de ArteGiann, para conocer más sobre sus diseños exclusivos y creatividad, o para adquirir algún producto en su tienda en línea, aquí te dejamos sus medios de contacto"
               />
-            <Grid item xs={12} textAlign="center">
+            <Grid item xs={12} textAlign="center" style={{marginBottom:'30px'}}>
               <Grid container spacing={2} justifyContent="center" alignItems="flex-start">
                 <Grid item xs={12} md={4}>
                   <Typography variant="body1" color="inherit" gutterBottom>
