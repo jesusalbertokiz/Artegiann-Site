@@ -6,24 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap", 
-    "gatsby-plugin-mdx", 
-    {
-      resolve: 'gatsby-plugin-favicons',
-      options: {
-        logo: './src/images/staticImage/logo.png',
-        appName: 'Artegiann',
-        background: '#fff',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          yandex: false,
-          windows: false
-        }
-      }
-    }
+    "gatsby-plugin-mdx"
     ,
     {
     resolve: 'gatsby-source-filesystem',
