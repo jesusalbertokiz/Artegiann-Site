@@ -30,7 +30,7 @@ export function Head() {
   return (
     <>
       <html lang="es" />
-      <title>Home</title>
+      <title>El inicio</title>
       <link rel="icon" type="image/png" href="../images/staticImage/logo.png"></link>
     </>
   )
