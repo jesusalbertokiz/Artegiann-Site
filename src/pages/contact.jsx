@@ -8,7 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 import { Grid, IconButton, Typography, Button } from "@mui/material";
-import { Instagram, Tiktok, WhatsApp } from "@mui/icons-material";
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const ContactPage = () => {
   return (
@@ -43,7 +43,7 @@ const ContactPage = () => {
                   <Typography variant="body1" color="primary" gutterBottom>
                     WhatsApp: También puedes escribirle vía WhatsApp al número +58 414-439.64.02 para hacerle preguntas o hacerle pedidos.
                   </Typography>
-                  <WhatsApp />
+                  <WhatsAppIcon />
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <Typography variant="body1" color="primary" gutterBottom>
