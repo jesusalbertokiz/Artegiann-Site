@@ -29,9 +29,9 @@ export default IndexPage
 export function Head() {
   return (
     <>
-      <html lang="es" />
-      <title>El inicio</title>
-      <link rel="icon" type="image/png" href="../images/staticImage/logo.png"></link>
+      <html lang="es"/>
+      <title>Home</title>
+      <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/jesusalbertokiz/Artegiann-Site/main/src/images/staticImage/logo.png"></link>
     </>
   )
 }
