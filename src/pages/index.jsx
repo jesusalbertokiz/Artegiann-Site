@@ -26,4 +26,12 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export function Head() {
+  return (
+    <>
+      <html lang="es" />
+      <title>Home</title>
+      <link rel="icon" type="image/png" href="../images/staticImage/logo.png"></link>
+    </>
+  )
+}
