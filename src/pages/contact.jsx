@@ -17,7 +17,7 @@ const ContactPage = () => {
         <Container>
           <Grid container spacing={2} justifyContent="center" alignItems="center" style={{margin:'auto', color:'white'}}>
             <ImageWithTextRigth
-                className="heroBack"
+                
                 image={
                   <StaticImage 
                     src="../images/staticImage/giannela-contacto.jpeg" 
@@ -27,11 +27,11 @@ const ContactPage = () => {
                 title="Contacto"
                 subtitle="¡Hola! Si te gustaría contactar con Giannella, la creadora de ArteGiann, para conocer más sobre sus diseños exclusivos y creatividad, o para adquirir algún producto en su tienda en línea, aquí te dejamos sus medios de contacto"
               />
-            <Grid item xs={12} textAlign="center" style={{marginBottom:'30px'}}>
+            <Grid className="heroBack" item xs={12} textAlign="center" style={{marginBottom:'30px', borderRadius: '30px'}}>
               <Grid container spacing={2} justifyContent="center" alignItems="flex-start">
                 <Grid item xs={12} md={4}>
                   <Typography variant="body1" color="inherit" gutterBottom>
-                    Redes sociales: Puedes seguir a Giannella en Instagram y TikTok, donde comparte sus obras de arte y su creatividad. Encuéntrala en @artegiannve.
+                    Puedes seguir a Giannella en Instagram y TikTok, donde comparte sus obras de arte y su creatividad. Encuéntrala en @artegiannve.
                   </Typography>
                   <Grid item xs={12} textAlign="center">
                     <IconButton href="https://www.instagram.com/artegiannve/" target="_blank" rel="noopener">
@@ -44,7 +44,7 @@ const ContactPage = () => {
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <Typography variant="body1" color="inherit" gutterBottom>
-                    WhatsApp: También puedes escribirle vía WhatsApp para hacerle preguntas o hacerle pedidos.
+                    También puedes escribirle vía WhatsApp para hacerle preguntas o hacerle pedidos.
                   </Typography>
                   <IconButton href="https://wa.link/2i5201" target="_blank" rel="noopener">
                     <WhatsAppIcon style={{color:'#7b1fa2'}}/>
@@ -52,7 +52,7 @@ const ContactPage = () => {
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <Typography variant="body1" color="inherit" gutterBottom>
-                    Tiendas en línea: Si quieres adquirir algún producto de ArteGiann, puedes visitar sus tiendas en línea.
+                    Si quieres adquirir algún producto de ArteGiann, puedes visitar sus tiendas en línea.
                   </Typography>
                   <IconButton href="https://artegiann.atienda.la/#/products" target="_blank" rel="noopener">
                     <ShoppingCart style={{color:'#7b1fa2'}}/>
