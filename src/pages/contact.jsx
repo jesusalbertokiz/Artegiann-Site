@@ -59,11 +59,6 @@ const ContactPage = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} textAlign="center">
-              <Button variant="contained" color="primary" href="/">
-                Volver al inicio
-              </Button>
-            </Grid>
           </Grid>
         </Container>
       </Layout>
