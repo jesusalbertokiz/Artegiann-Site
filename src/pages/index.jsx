@@ -32,6 +32,13 @@ export function Head() {
       <html lang="es"/>
       <title>Home</title>
       <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/jesusalbertokiz/Artegiann-Site/main/src/images/staticImage/logo.png"></link>
+      
+            
+      <link rel="stylesheet" href="https://jmxs.odoo.com/im_livechat/external_lib.css"/>
+            
+      <script type="text/javascript" src="https://jmxs.odoo.com/im_livechat/loader/1"></script>
+            
+      <script type="text/javascript" src="https://jmxs.odoo.com/im_livechat/external_lib.js"></script>
     </>
   )
 }
